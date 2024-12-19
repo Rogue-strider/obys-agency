@@ -146,21 +146,32 @@ body{
     width: 72%;
     margin-left: 27%;
     height: fit-content;
-    overflow: hidden;
+    overflow-y: hidden;
     display: flex;
     align-items: center;
-    position: relative;
     z-index: 999;
 
 }
+
+
 .hero:nth-child(2){
     margin-top: 18vh;
 }
 .hero h1{
     font-size: 7.2vw;
     font-weight: 600;
+    position: relative;
     text-transform: uppercase;
     line-height: 7.2vw;
+}
+#hero1::before{
+    content: "01";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: 20%;
+    top: 29%;
 }
 
 .hero h2,.hero h3{
@@ -254,7 +265,18 @@ body{
 
 #page4-content h1{
     font-size: 7vw;
+    position: relative;
     text-transform: uppercase;
+}
+
+#page4-content h1::before{
+    content: "03";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
 }
 
 #page4-content .underline{
@@ -332,13 +354,13 @@ body{
     color: transparent;
     display: inline-block;
     margin-right: 16px;
-    animation-name: anime;
+    animation-name: anime1;
     animation-duration: 12s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 
-@keyframes anime {
+@keyframes anime1 {
     from{
         transform: translateX(0);
     }
@@ -362,7 +384,7 @@ body{
     color: transparent;
     display: inline-block;
     transform: translateX(calc(-100% - 20px));
-    animation-name: anime;
+    animation-name: anime1;
     animation-duration: 12s;
     animation-timing-function: linear;
     animation-iteration-count: infinite;
@@ -379,4 +401,66 @@ body{
     font-style: italic;
     font-family: "silk serif";
     color: transparent;
+}
+
+#footer{
+    height: 90vh;
+    width: 100%;
+    /* background-color: red; */
+    position: relative;
+    padding-left: 28vw;
+    padding-right: 2vw;
+}
+
+#footer h1{
+    font-size: 7vw;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#footer h1::before{
+    content: "04";
+    position: absolute;
+    font-size: 3vw;
+    font-weight: 100;
+    font-family: "silk serif";
+    left: -12%;
+    top: 8%;
+}
+
+.underline{
+    height: 2px;
+    width: 100%;
+    background-color: #fff;
+    margin: 3vw 0;
+}
+
+#footer-div{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-right: 15vw;
+    padding-top: 4vw;
+    margin-bottom: 6vw;
+}
+
+#footer-div h6{
+    font-size: 0.9vw;
+    margin-bottom: 1.5vw;
+    font-weight: 500;
+}
+.box{
+    width: 20%;
+}
+
+#footer-div h5{
+    font-size: 1.4vw;
+    font-weight: 500;
+    /* margin: 0.2vh 0; */
+}
+
+#footer>h5{
+    font-weight: 500;
+    
+    font-size: 0.91vw;
 }
