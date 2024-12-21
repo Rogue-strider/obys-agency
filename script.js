@@ -51,7 +51,7 @@ function loadingAnimation() {
         } else {
           h5timer.innerHTML = grow;
         }
-      }, 33);
+      }, 27);
     },
   });
   tl.to(".line h2", {
@@ -61,7 +61,7 @@ function loadingAnimation() {
   tl.to("#loader", {
     opacity: 0,
     duration: 0.2,
-    delay: 2.9,
+    delay: 2.6,
   });
 
   tl.from("#page1", {
@@ -230,3 +230,4 @@ document.querySelector("#hero3").addEventListener("mouseleave", function () {
     opacity: 0,
   });
 });
+
